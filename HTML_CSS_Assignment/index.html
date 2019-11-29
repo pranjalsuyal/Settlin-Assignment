@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<title>HTML & CSS Assignment</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+    	<header id="TextImage">
+            <nav>
+                <div class="row">
+                    <ul class="navigation">
+                        <li class="list"><a href="#Elements">Block & Inline Elements</a></li>
+                        <li class="list"><a href="#TextImage">Image wtih text</a></li>
+                        <li class="list"><a href="#Table">Table</a></li>
+                        <li class="list"><a href="#List">List</a></li>
+                        <li class="list"><a href="#Form">Form</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="textImage">
+                <h1>Example of<br>Text over an image</h1>
+            </div> 
+        </header>
+        <section id="Elements">
+        	<div style="border:10px solid black;margin:20px">
+        		This is a div element
+        	</div>
+            <div style="border:10px solid black;margin:20px">
+                This is a div element <span style="border:5px solid red"> with span attached to it</span>
+            </div>
+            <div>
+            	<span style="border:10px solid black; margin-left: 20px;margin:20px">
+            		This is a span!
+            	</span>
+            	<span style="border:10px solid black; margin-left:40px;margin:20px">
+            		This is another span!
+            	</span>
+            	<span style="border:10px solid black;margin-left:40px;margin:20px">
+            		This is third span!
+            	</span>
+            </div>
+        	<p style="border:10px solid black;margin:20px">
+        		This is a paragraph.<br>
+        		It can contain large amount of data.<br>
+        		which can be expanded over a number of lines.<br>
+                <em>We get to know the space occupied by both block element and inline element by noticing the border provided with it<br>
+        	</p>
+            <div style="width:100%;text-align: center;margin-top:100px">
+            	<h1>This is an example of h1 heading</h1>
+            	<h2>This is an example of h2 heading</h2>
+            	<h3>This is an example of h3 heading</h3>
+            	<h4>This is an example of h4 heading</h4>
+            	<h5>This is an example of h5 heading</h5>
+            	<h6>This is an example of h6 heading</h6>
+            </div>
+        </section>
+        <section class="section-steps" id="Table">
+            <h2  style="
+                        width:100%;
+                        text-align:center;
+                        margin-bottom: 20px;
+                        font-size: 200%;
+                        word-spacing: 4px;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;">
+                    Table
+                </h2>
+        	<table class="tftable" border="1">
+        		<tr>
+    				<th>Entry Header 1</th>
+    				<th>Entry Header 2</th>
+    				<th>Entry Header 3</th>
+    				<th>Entry Header 4</th>
+  				</tr>
+  				<tr>
+    				<td>Entry First Line 1</td>
+    				<td>Entry First Line 2</td>
+    				<td>Entry First Line 3</td>
+    				<td>Entry First Line 4</td>
+  				</tr>
+  				<tr>
+    				<td>Entry Line 1</td>
+    				<td>Entry Line 2</td>
+    				<td>Entry Line 3</td>
+    				<td>Entry Line 4</td>
+  				</tr>
+  				<tr>
+    				<td>Entry Last Line 1</td>
+    				<td>Entry Last Line 2</td>
+    				<td>Entry Last Line 3</td>
+    				<td>Entry Last Line 4</td>
+  				</tr>
+			</table>
+		</section>
+        <section  style="width:100%;text-align:center" id="List">
+        	<h2>An Unordered HTML List</h2>
+			<ul style="list-style-position: inside;">
+  				<li>Data-1</li>
+  				<li>Data-2</li>
+  				<li>Data-3</li>
+  				<li>Data-4</li>
+  				<li>Data-5</li>
+			</ul>  
+			<h2>An Ordered HTML List</h2>
+			<ol style="list-style-position: inside;">
+  				<li>Data-1</li>
+  				<li>Data-2</li>
+  				<li>Data-3</li>
+  				<li>Data-4</li>
+  				<li>Data-5</li>
+			</ol> 
+        </section>
+		<section class="section-steps section-form" id="Form">
+		    <div class="row">
+		        <h2  style="
+                        width:100%;
+                        text-align:center;
+                        margin-bottom: 20px;
+                        font-size: 200%;
+                        word-spacing: 4px;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;">
+                    Form
+                </h2>
+		    </div>
+		    <div class="row">
+		        <form method="post" action="#" class="contact-form">
+		            <div class="row">
+		                <div style="width:100%;text-align:center">
+		                    <label for="name">Name</label>
+		                </div>
+		                <div style="width:100%;text-align:center">
+		                    <input type="text" name="name" id="name" placeholder="Your name" required>
+		                </div>
+		            </div>
+		            <div class="row">
+		                <div style="width:100%;text-align:center">
+		                    <label for="email">Email</label>
+		                </div>
+		                <div style="width:100%;text-align:center">
+		                    <input type="email" name="email" id="email" placeholder="Your email" required>
+		                </div>
+		            </div>
+                    <div class="row">
+                        <div style="width:100%;text-align:center">
+                            <label for="email">Contact Number</label>
+                        </div>
+                        <div style="width:100%;text-align:center">
+                            <input type="number" name="number" id="number" placeholder="Your Contact Number" required>
+                        </div>
+                    </div>
+		            <div class="row">
+		                <div style="width:100%;text-align:center">
+		                    <label for="find-us">Select Menu</label>
+		                </div>
+		                <div style="width:100%;text-align:center">
+		                    <select name="select" id="select">
+		                        <option value="Option 1" selected>Option 1</option>
+		                        <option value="Option 2">Option 2</option>
+		                        <option value="Option 3">Option 3</option>
+		                        <option value="Option 4">Option 4</option>
+		                    </select>
+		                </div>
+		            </div>
+		            <div class="row">
+		                <div style="width:100%;text-align:center">
+		                    <label>CheckBox ?</label>
+		                </div>
+		                <div style="width:100%;text-align:center;margin-bottom: 10px">
+		                    <input type="checkbox" name="news" id="news" checked> Yes, please
+                            <input type="checkbox" name="news" id="news"> No, please
+		                </div>
+		            </div>
+                    <div class="row">
+                        <div style="width:100%;text-align:center">
+                            <label>Radio Buttons</label>
+                        </div>
+                        <div style="width:100%;text-align:center;margin-bottom: 10px">
+                            <input type="radio" name="Radio" checked> Radio 1
+                            <input type="radio" name="Radio" > Radio 2
+                            <input type="radio" name="Radio" > Radio 3
+                            <input type="radio" name="Radio" > Radio 4
+                        </div>
+                    </div>
+		            <div class="row">
+		                <div style="width:100%;text-align:center">
+		                    <label>Text Area</label>
+		                </div>
+		                <div style="width:100%;text-align:center">
+		                    <textarea name="message" placeholder="Your message"></textarea>
+		                </div>
+		            </div>
+		            <div class="row">
+		                <div style="width:100%;text-align:center">
+		                    <label>&nbsp;</label>
+		                </div>
+		                <div style="width:100%;text-align:center">
+		                    <input style="width:33%;height: 5vh" type="submit" value="Send it!">
+                            <input style="width:33%;height: 5vh" type="reset" value="Reset">
+		                </div>
+		            </div>
+		            
+		        </form>
+		    </div>
+		</section>
+	</body>

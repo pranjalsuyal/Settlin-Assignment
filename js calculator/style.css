@@ -1,0 +1,97 @@
+/*------calculator background body-------*/
+#bg-body {
+  height: 100vh;
+  width: 100%;
+  background:#f4f4f4;;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*------calculator body-------*/
+#calculatorBody {
+  height: 75vh;
+  width: 25%;
+  box-shadow: 0 2rem 4rem;
+  background-color: white;
+}
+/*------calculator screen-------*/
+.screen {
+  height: 20vh;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  color: white;
+  background-color: #eb3b5a;
+}
+/*------calculator answer screen-------*/
+#answer {
+  height: 19vh;
+  font-size: 4rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+/*------row styling-------*/
+.row {
+  height: 11vh;
+  width: 100%;
+  display: flex; /* To control the dimension */
+  color: white;
+}
+/*------keypad body-------*/
+.keypad {
+  height: 55vh;
+  width: 100%;
+}
+/*------Styling for individual button-------*/
+input {
+  width: 25%;
+  height: 100%;
+  font-size: 3rem;
+  font-family: inherit;
+  background-color: white;
+  border: 1px solid transparent;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .2s;
+}
+/*----------Styling for individual button when hovered over----------*/
+input:hover {
+  color: white;
+  background-color: #eb3b5a;
+}
+/*----------Styling for individual button when active----------*/
+input:active {
+  transform: scale(.95);
+}
+/*----------Styling for  button which occupy double button space to maintain the allignment----------*/
+.double-btn {
+  width: 50%;
+  color: white;
+  background-color: #eb3b5a;
+  transition: all .2s;
+}
+/*----------Styling for double button when hovered over----------*/
+.double-btn:hover {
+  background-color: #c91032;
+  color: white;
+}
+/*----------Color for nummbers ----------*/
+.btn-primary {
+  color: tomato;
+}
+/*----------Color for operators ----------*/
+.operator {
+  color:  #eb3b5a;
+}
+/*----------Styling for All Clear button ----------*/
+.ac{
+	width: 50%;
+	background-color: white;
+	color: #eb3b5a;
+	transition: all .2s;
+}

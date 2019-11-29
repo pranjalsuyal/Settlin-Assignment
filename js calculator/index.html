@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculator made on JavaScript without using eval function.">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="calculator.js"></script>
+  </head>
+  <body>
+    <div id="bg-body"> 
+      <div id="calculatorBody">
+        <div class="screen">
+          <span id="answer">0</span>
+        </div>
+        <div class="keypad">
+          <div class="row">
+            <input id="AC" class="ac" type="button" onclick="clearAll()" value="AC"/>
+            <input class="operator" type="button" onclick="back()" value="←"/>
+            <input class="operator" type="button" onclick="add('/')" value="/"/>                        
+          </div>
+          <div class="row">
+            <input type="button" onclick="add('7')" value="7"/>
+            <input type="button" onclick="add('8')" value="8"/>
+            <input type="button" onclick="add('9')" value="9"/>
+            <input class="operator" type="button" onclick="add('*')" value="*"/>     
+          </div>
+          <div class="row">
+            <input type="button"  onclick="add('4')" value="4"/>
+            <input type="button" onclick="add('5')" value="5"/>
+            <input type="button"  onclick="add('6')" value="6"/>
+            <input class="operator" type="button" onclick="add('-')" value="-"/>
+          </div>
+          <div class="row">
+            <input type="button"  onclick="add('1')" value="1"/>
+            <input type="button"  onclick="add('2')" value="2"/>
+            <input type="button"  onclick="add('3')" value="3"/>
+            <input class="operator" type="button" onclick="add('+')" value="+"/>
+          </div>
+          <div class="row">
+            <input type="button"  onclick="add('0')" value="0"/>
+            <input type="button" onclick="add('.')" value="."/>
+            <input id="equals" class="double-btn " type="button"  onclick="calc()" value="="/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
